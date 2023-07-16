@@ -25,14 +25,16 @@ struct MainPage: View {
                 Home()
                     .tag(Tab.Home)
                 
-                Text("Liked")
-                    .tag(Tab.Liked)
+                UserProfileForm()
+                    .tag(Tab.Form)
                 
-                Text("Profile")
+                Maps()
+                    .tag(Tab.Maps)
+                
+                ProfilePage()
                     .tag(Tab.Profile)
                 
-                Text("Cart")
-                    .tag(Tab.Cart)
+                
             }
             
             // Custom Tab Bar...
@@ -49,7 +51,7 @@ struct MainPage: View {
                             .renderingMode(.template)
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 22, height: 22)
-                        // Applying little shadow at bg...
+                            // Little shadow at bg...
                             .background(
                             
                                 Color("Purple")
@@ -57,7 +59,6 @@ struct MainPage: View {
                                     .cornerRadius(5)
                                 // blurring...
                                     .blur(radius: 5)
-                                // Making little big...
                                     .padding(-7)
                                     .opacity(currentTab == tab ? 1 : 0)
                                 
@@ -80,14 +81,13 @@ struct MainPage_Previews: PreviewProvider {
     }
 }
 
-// Making Case Iteratable...
-// Tab Cases...
+// Tab Case
 enum Tab: String,CaseIterable{
     
-    // Raw Value must be image Name in asset..
+    // Image Name in asset..
     case Home = "Home"
-    case Liked = "Liked"
+    case Form = "Form"
+    case Maps = "Maps"
     case Profile = "Profile"
-    case Cart = "Cart"
 }
 
