@@ -65,10 +65,10 @@ struct ProfilePage: View {
                     }
                     
                     
-                    CustomNavigationLink(title: "Shopping address") {
+                    CustomNavigationLink(title: "Change Passwords") {
                         
                         Text("")
-                            .navigationTitle("Shopping address")
+                            .navigationTitle("Change Passwords")
                             .frame(maxWidth: .infinity, maxHeight: .infinity)
                             .background(Color("HomeBG").ignoresSafeArea())
                     }

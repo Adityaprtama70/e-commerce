@@ -18,7 +18,7 @@ struct LoginPage: View {
                 .font(.custom(customFont, size: 55).bold())
                 .foregroundColor(.white)
                 .frame(maxWidth: .infinity,alignment: .leading)
-                .frame(height: getRect().height / 3.5)
+               // .frame(height: getRect().height / 3.5)
                 .padding()
                 .background(
                 

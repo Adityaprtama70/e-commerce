@@ -22,10 +22,10 @@ struct MainPage: View {
             // Tab View...
             TabView(selection: $currentTab) {
                 
-                Home()
+                Page()
                     .tag(Tab.Home)
                 
-                UserProfileForm()
+                Train()
                     .tag(Tab.Form)
                 
                 Maps()

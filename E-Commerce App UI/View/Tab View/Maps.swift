@@ -15,10 +15,10 @@ struct Place: Identifiable {
 }
 
 struct Maps: View {
-  @State private var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: -6.1970, longitude: 106.8226), span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
+  @State private var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: -6.173110, longitude: 106.829361), span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
   
   var empireStateBuilding =
-  Place(name: "Menara BCA", coordinate: CLLocationCoordinate2D(latitude: -6.1970, longitude: 106.8226))
+  Place(name: "Gambir Station", coordinate: CLLocationCoordinate2D(latitude: -6.173110, longitude: 106.829361))
   
   var body: some View {
     NavigationView {

@@ -24,6 +24,6 @@ extension CLLocationCoordinate2D: CustomStringConvertible {
 
 struct LocationDetailsView_Previews: PreviewProvider {
   static var previews: some View {
-    LocationDetailsView(place: Place(name: "Menara BCA", coordinate: CLLocationCoordinate2D(latitude: 0, longitude: 0)))
+    LocationDetailsView(place: Place(name: "Gambir Station", coordinate: CLLocationCoordinate2D(latitude: 0, longitude: 0)))
   }
 }

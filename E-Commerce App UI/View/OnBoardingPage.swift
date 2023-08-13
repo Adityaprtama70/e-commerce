@@ -17,12 +17,13 @@ struct OnBoardingPage: View {
         
         VStack(alignment: .leading){
             
-            Text("Find your\nGadget")
+            Text("Find your\n Ticket")
                 .font(.custom(customFont, size: 55))
                 .fontWeight(.bold)
                 .foregroundColor(.white)
+                .padding(30)
             
-            Image("OnBoard")
+            Image("10966")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
             
@@ -44,12 +45,12 @@ struct OnBoardingPage: View {
             }
             .padding(.horizontal,30)
             // Adding Some Adjustments only for larger displays...
-            .offset(y: getRect().height < 750 ? 20 : 40)
+         //   .offset(y: getRect().height < 750 ? 20 : 40)
             
             Spacer()
         }
-        .padding()
-        .padding(.top,getRect().height < 750 ? 0 : 20)
+        .padding(.vertical, 80)
+   //     .padding(.top,getRect().height < 750 ? 0 : 20)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(
         
